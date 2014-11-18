@@ -8,10 +8,13 @@ struct connection_t
   int sock_desc;
   socket_address addr;
   socklen_t len;
+  bool closed;
+  std::queue<std::string> incoming;
   connection_t( int desc, socket_address addr,socklen_t len) {
     this->sock_desc = desc;
     this->addr = addr;
     this->len = len;
+    this->closed = true;
   }
 };
 

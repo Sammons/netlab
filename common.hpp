@@ -8,6 +8,8 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <fcntl.h>
+#include <stdio.h>
+#include <string.h>
 
 #include <iostream>
 #include <algorithm>
